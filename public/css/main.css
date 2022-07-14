@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+:root{
+    --amarillo :#EAC926;
+    --azul : #03264C;
+    --celeste :#1259c3;
+    --grisOscuro: #666;
+    --grisClaro:#ebebeb;
+    --verde :#39b54a;
+    };
+body{
+        font-family: 'Roboto';
+        display: flex;
+           
+    }
+html{
+    font-size: 10px;
+}
+
+main{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #ebebeb;
+}
+
+.box_productos{
+    width:80%;
+    margin-bottom: 1rem;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.first-title{
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    font-size: 2.4rem;
+    color: var(--grisOscuro);
+    margin-top: 0rem;
+    margin-bottom: 2.0rem;
+    padding: 1.0rem;
+
+}
+.first-title h2{
+    margin-left: 3.0rem;
+}
+.second-title{
+    font-size: 2.4rem;
+    color: var(--grisOscuro);
+    margin-bottom: 2.0rem;
+    padding: 1.0rem;
+}
+
+.descripcion{
+    font-size:1.6rem;
+    margin-top: 2.0rem ;
+    padding-bottom:2.0rem ;
+    color: var(--grisOscuro);
+}
+
+.descuento{
+    font-size: 1.6rem;
+    color: var(--verde);
+    width: 70%;
+    padding-top: 0.2rem;
+    padding-left: 0.5rem;
+    
+}
+
+.precio{
+    font-size: 1.8rem;
+    width: 30%;
+    text-align: right;
+    padding-right: 0.5rem;
+    
+}
+
+.precio-descuento{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: left;
+}
+.articulos{
+    width: 100%;
+    display: flex;
+    text-align: start;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: white;
+    border-top: 0.1rem solid #ebebeb;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+.article-truck{
+    display: flex;
+    justify-content: center;
+    text-align: end;
+    position: relative;
+}
+main section article i{
+    background-color: #FFF;
+    color: var(--verde);
+    border: 0.01rem solid var(--verde);
+    border-radius: 50%;
+    display:flex;
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    width: 3.0rem;
+    position: absolute;
+    right: 3.0rem;
+    bottom: 0.2rem;
+}
+
+.first-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.second-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
