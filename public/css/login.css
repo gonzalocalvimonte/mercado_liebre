@@ -1,24 +1,31 @@
 @import url('styles.css');
 @import url('footer.css');
-
-.main-register{
+:root{
+    --amarillo :#EAC926;
+    --azul : #03264C;
+    --celeste :#1259c3;
+    --grisOscuro: #666;
+    --grisClaro:#ebebeb;
+    --verde :#39b54a;
+    }
+.main-login{
     width: 100%;
-    height: 30vh;
+    height: 60vh;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     
 }
-.section-register{
+.section-login{
     width: 50%;
-    
+    margin: 2.0rem 0 3.0rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .form-login{
-    width: 100%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,8 +37,13 @@
     border-radius: 0.5rem;
 }
 .boton-enviar{
-    width: 100%;
+    width: auto;
+    margin: 2.0rem 0rem 0rem 0rem;
+    padding: 1.0rem;
     background-color: var(--celeste);
     color: #FFF;
+    display: flex;
     text-align: center;
+    align-items: center;
+    border-radius: 0.5rem;
 }

@@ -1,0 +1,143 @@
+@import url('styles.css');
+@import url('footer.css');
+
+:root{
+    --amarillo :#EAC926;
+    --azul : #03264C;
+    --celeste :#1259c3;
+    --grisOscuro: #666;
+    --grisClaro:#ebebeb;
+    --verde :#39b54a;
+    }
+
+.main-register{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.section-register{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.0rem 0 3.0rem 0;
+}
+.form-register{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-enviar,.boton-reset{
+    width: auto;
+    margin: 2.0rem 0rem 0rem 0rem;
+    padding: 1.0rem;
+    background-color: var(--celeste);
+    color: #FFF;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    
+}
+
+.form-register input{
+    margin: 2.0rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+.fieldset-1{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.fieldset-1 section{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+}
+
+.fieldset-1 label{
+    font-size: 1.6rem;
+}
+.fieldset-2{
+    margin-top:1.5rem ;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.fieldset-2 input{
+    display: flex;
+    width: auto;
+}
+.fieldset-2 label{
+    display: flex;
+    width: 30%;
+    font-size: 1.6rem;
+
+}
+.fieldset-2 section{  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.span{
+    margin-bottom: 1.0rem;
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: bold;
+    width: 100%;
+}
+.label-perfil{
+    
+    font-size: 1.6rem;
+    text-align: left;
+    width: 30%;
+}
+
+.input-perfil{
+    margin-left: 0rem;
+    padding: 0rem;
+    width: 40%;
+}
+
+.section-perfil{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/*celulares*/
+@media screen and (max-width: 529px){
+    .fieldset-2 section{  
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+    }
+    .fieldset-2 label{
+        display: flex;
+        width: 70%;
+        font-size: 1.6rem;
+    
+    }
+}
