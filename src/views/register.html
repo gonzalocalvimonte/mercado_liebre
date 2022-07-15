@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register-Mercado Liebre</title>
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/register.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" 
@@ -54,8 +54,64 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
         </section>
         
     </header>
+
     <main class="main-register">
-      
+        <section class="section-register">
+      <form class="form-register" action="">
+        <input type="text" name="nombre" placeholder="Nombre y apellido">
+        <input type="text" name="nick" placeholder="Nombre de usuario">
+        <input type="date" name="nacimiento">
+        <input type="text" name="domicilio" placeholder="Domicilio">
+        <input type="number" name="telefono" placeholder="Telefono">
+        <input type="email" name="Email" placeholder="Email">
+        <fieldset class="fieldset-1">
+            <span class="span">Perfil de usuario</span>
+
+        <section>
+        <label for="v-comprador">Comprador</label>
+        <input type="radio" name="view" id="v-comprador" value="comprador">
+        <label for="v-vendedor">Vendedor</label>
+        <input type="radio" name="view" id="v-vendedor" value="vendedor">       
+        </section>
+        </fieldset>
+
+        <fieldset class="fieldset-2">
+            <span class="span">Categorias de interes</span>
+        <section>
+        <label for="">Electronica</label>    
+        <input type="checkbox" name="" id="" value="">
+        <label for="">Moda</label>
+        <input type="checkbox" name="" id="" value="">
+        <label for="">Hogar</label>
+        <input type="checkbox" name="" id="" value="">
+        <label for="">Jugueteria</label>
+        <input type="checkbox" name="" id="" value="">
+        <label for="">Vida sana</label>
+        <input type="checkbox" name="" id="" value="">
+        <label for="">Autos</label>    
+        <input type="checkbox" name="" id="" value="">
+        <label for="">Mascotas</label>
+        <input type="checkbox" name="" id="" value="">
+        <label for="">Agro</label>
+        <input type="checkbox" name="" id="" value="">
+        <label for="">Colecciones</label>
+        <input type="checkbox" name="" id="" value="">
+        <label for="">Jardin</label>
+        <input type="checkbox" name="" id="" value="">
+        </section>
+        </fieldset>
+
+        <section class="section-perfil">
+        <label class="label-perfil" for="">Selecionar foto de perfil</label>
+        <input class="input-perfil" type="file" name="" id="">
+        </section>
+
+        <input type="password" name="contrasenia" placeholder="Contraseña">
+        <input type="password" name="rep-contra" placeholder="Repetir contraseña">
+        <button class="boton-enviar">Enviar</button>
+        <button class="boton-reset">Borrar Formulario</button>
+    </section>  
+    </form>
     </main>
    
 <footer class="footer">

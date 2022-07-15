@@ -54,11 +54,13 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
         </section>
         
     </header>
-    <main class="main-register">
-        <section class="section-register">
+    <main class="main-login">
+        <section class="section-login">
         <form  class="form-login" action="/home" method="get">
-            <input class="input-nombre" type="text" placeholder="Nombre de usuari@" name="q">
-            <input class="input-contra" type="password" placeholder="********" name="q">
+
+            <input class="input-nombre" type="text" placeholder="Nombre de usuari@" name="q" size="5" required>
+
+            <input class="input-contra" type="password" placeholder="********" name="q" minlength="6" required>
             <button type="submit" class="boton-enviar">Enviar</button>
         </form>
     </section>
