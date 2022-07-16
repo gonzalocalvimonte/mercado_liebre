@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     border: none;  
+    font-family: 'Roboto', sans-serif;
 }
 :root{
     --amarillo :#EAC926;
@@ -11,11 +12,11 @@
     --grisOscuro: #666;
     --grisClaro:#ebebeb;
     --verde :#39b54a;
-    };
+    }
+
 body{
         font-family: 'Roboto';
-        display: flex;
-           
+        display: flex;    
     }
 html{
     font-size: 10px;
@@ -28,18 +29,22 @@ html{
     margin-bottom: 1rem;
 }
 
-.footer div {
+.div-logo i{
     color: var(--celeste);
-        font-size: 2rem;
-        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        width: auto;
 }
-footer{
-    text-align: center;
+.footer{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 1.0rem;
 }
 
-footer section{
-    margin: 1.5rem;
-}
+
 
 footer p{
     font-size: 1.6rem;
@@ -48,6 +53,30 @@ footer article{
     display: flex;
     justify-content: center;
     font-size: 1.6rem;
+    align-items: center;
     text-align: center;
     flex-direction: row;
+}
+.section-footer{
+    margin: 2.0rem 0rem 2.0rem 0rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.article-footer{
+    margin: 2.0rem 0rem 2.0rem 0rem;
+}
+.boxs-footer{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.div-logo i:hover{
+    color: #0077b6;
 }

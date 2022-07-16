@@ -1,0 +1,130 @@
+:root{
+    --amarillo :#EAC926;
+    --azul : #03264C;
+    --celeste :#1259c3;
+    --grisOscuro: #666;
+    --grisClaro:#ebebeb;
+    --verde :#39b54a;
+    }
+
+header{
+    background-color: var(--amarillo);  
+    font-size: 1.6rem;
+}
+.conteiner-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding:1.0rem 1.0rem 0rem;
+
+}
+.logo_ml{
+    width: auto;
+}
+.search_bar{
+    flex-grow: 0.5;
+}
+.search_bar form{
+    display: flex;
+}
+.search_bar form input{
+    background-color:#FFF;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 100%;   
+}
+
+.search_bar form button{
+    background-color:#FFF;
+    color: var(--grisOscuro);
+    padding: 0.5rem;
+    border-radius: 30%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: auto;
+    margin-left: 0.5rem;
+}
+
+.title_ul, .search_bar{
+    width: auto;
+    display: flex;
+}
+
+.title_ul{
+    margin-right: 0.5rem;
+    color: var(--grisOscuro); 
+}
+.title_ul i{
+    width: auto;
+    
+}
+
+.section-ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 2.0rem;
+    margin-top: 2.0rem;
+}
+.ul-1,.ul-2{
+    width: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: row;   
+}
+.ul-1 li{width: auto;
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    list-style: none;
+}
+.ul-1 a{
+    margin: 0.5rem;
+    color: var(--grisOscuro);
+    text-decoration: none;
+}
+
+.ul-2 a{
+    margin: 0.5rem;
+    color: var(--grisOscuro);
+    text-decoration: none;
+}
+
+a i{
+    width: auto;
+}
+
+.burger-menu{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.burger-menu i {
+    color: var(--grisClaro);
+    font-size: 3.0rem;
+    padding: 0.6rem;
+    background-color: var(--celeste);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 2.0rem;
+}
+
+.img_banner{
+    display: flex;
+    width: 100%;
+}
+.img_banner img{
+    width: 100%;
+}

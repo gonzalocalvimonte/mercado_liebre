@@ -1,13 +1,14 @@
 @import url('footer.css');
 @import url('main.css');
-
-
+@import url('header.css');
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: none;
-    width: 100%;  
+     width: 100%;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 :root{
@@ -20,133 +21,9 @@
 };
 
 body{
-    font-family: 'Roboto' ;
-    display: flex;
-       
+    font-family: 'Roboto', sans-serif;
 }
 
-header{
-    width: auto;  
-    background-color: var(--amarillo);  
-    font-size: 1.6rem;
-    text-decoration: none;
-   
-}
-.conteiner-header{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-    padding:2.0rem 1.0rem 0rem;
-
-}
-.logo_ml{
-    width: auto;
-}
-
-.logo_ml img{
-    width: 85%;
-    height: 85%;
-}
-
-.search_bar form input{
-    background-color:#FFF;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    width: 100%;   
-}
-
-.search_bar form button{
-    background-color:#FFF;
-    color: var(--grisOscuro);
-    padding: 0.5rem;
-    border-radius: 30%;
-    text-align: center;
-    justify-content: center;
-}
-
-.title_ul, .search_bar{
-    width: auto;
-    display: flex;
-}
-
-form{
-    display: flex;
-}
-.title_ul{
-    margin-right: 0.5rem; 
-}
-.title_ul i{
-    width: auto;
-    
-}
-button{
-    display: flex;
-    width: auto;
-    margin-left: 1.0rem;
-}
-
-.section-ul{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    padding: 2.0rem;
-    margin-top: 2.0rem;
-}
-.ul-1,.ul-2{
-    
-    width: auto;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    flex-direction: row;   
-}
-
-.ul-1 a{
-    margin: 0.5rem;
-}
-
-.ul-2 a{
-    margin: 0.5rem;
-}
-
-a i{
-    width: auto;
-}
-a{
-    color: var(--grisOscuro);
-    text-decoration: none;
-}
-span{
-    color: var(--grisOscuro);
-}
-.burger-menu{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.burger-menu i {
-    color: var(--grisClaro);
-    font-size: 3.0rem;
-    padding: 0.6rem;
-    background-color: var(--celeste);
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: auto;
-    border-radius: 0.5rem;
-    margin-bottom: 2.0rem;
-}
-
-.img_banner{
-    display: flex;
-  
-    
-}
 /*desktop*/
 @media screen and (min-width: 1200px){
     .burger-menu{
@@ -154,16 +31,7 @@ span{
     }
     .box_productos{
         width: 20%;
-        -webkit-box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.75);
-        box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.75);
-    }
-}
-/*tablets*/
-@media screen and (min-width: 660px) and (max-width:1199px){
-    .box_productos{
-        width: 40%;
-        
+       
     }
     .box_productos:hover{
         -webkit-box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.75);
@@ -171,8 +39,56 @@ span{
         box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.75);
         transition: -webkit-box-shadow 2s,-moz-box-shadow 2s;
     }
+    .descripcion{
+        opacity: 0%;
+       
+    }
+   @keyframes opacidad {
+        0%{opacity: 0%}
+        100%{opacity: 100%}
+    }
+    .box_productos:hover .descripcion{
+        animation: opacidad 2s;
+        animation-fill-mode: both;
+    }
+    #middle-box{
+        border-left: 0.1rem solid black;
+        border-right: 0.1rem solid black;
+    }
+}
+/*tablets*/
+@media screen and (min-width: 660px) and (max-width:1199px){
+    .box_productos{
+        width: 40%;  
+    }
+    .box_productos:hover{
+        -webkit-box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.75);
+        transition: -webkit-box-shadow 2s,-moz-box-shadow 2s;
+    }
+    .descripcion{
+        opacity: 0%;  
+    }
+    @keyframes opacidad {
+        0%{opacity: 0%}
+        100%{opacity: 100%}
+    }
+    .box_productos:hover .descripcion{
+        animation: opacidad 2s;
+        animation-fill-mode: both;
+    }
+
     .burger-menu{
         display: none;
+    }
+    .section-footer{
+        padding: 1.0rem;
+        margin: 1.5rem 0rem 1.5rem 0rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
     }
 }
 
@@ -189,6 +105,27 @@ span{
        text-align: center;
        margin-top: 2.0rem;
     }
+    .section-footer{
+        padding: 1.0rem;
+        margin: 1.5rem 0rem 1.5rem 0rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .first-title{
+        text-align: center;
+    }
+    .first-title h2{
+        margin-left: 0rem;
+    }
+    .second-title{
+        text-align: center;
+    }
+    .second-title h2{
+        margin-left: 0rem;
+    }
+   
 }
 @media screen and (min-width:521px) and (max-width: 659px){
     .logo_ml{
@@ -196,6 +133,14 @@ span{
     }
     .search_bar{
         flex-grow: 0.5;
+    }
+    .section-footer{
+        padding: 1.0rem;
+        margin: 1.5rem 0rem 1.5rem 0rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
     }
 }
 @media screen and (max-width: 520px){
@@ -212,5 +157,12 @@ span{
         text-align: center;
         margin-top: 2.0rem;
     }
-    
+    .section-footer{
+        padding: 1.0rem;
+        margin: 1.5rem 0rem 1.5rem 0rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
 }

@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     border: none;
+    font-family: 'Roboto', sans-serif;
 }
 :root{
     --amarillo :#EAC926;
@@ -11,12 +12,13 @@
     --grisOscuro: #666;
     --grisClaro:#ebebeb;
     --verde :#39b54a;
-    };
-body{
-        font-family: 'Roboto';
-        display: flex;
-           
     }
+
+body{ 
+        display: flex;
+        flex-direction: column;
+}
+
 html{
     font-size: 10px;
 }
@@ -62,10 +64,16 @@ main{
     margin-left: 3.0rem;
 }
 .second-title{
+    display: flex;
+    justify-content: center;
+    text-align: start;
     font-size: 2.4rem;
     color: var(--grisOscuro);
     margin-bottom: 2.0rem;
     padding: 1.0rem;
+}
+.second-title h2{
+    margin-left: 3.0rem;
 }
 
 .descripcion{
@@ -73,6 +81,7 @@ main{
     margin-top: 2.0rem ;
     padding-bottom:2.0rem ;
     color: var(--grisOscuro);
+    opacity: 0%;
 }
 
 .descuento{
@@ -115,7 +124,7 @@ main{
     text-align: end;
     position: relative;
 }
-main section article i{
+.article-truck i{
     background-color: #FFF;
     color: var(--verde);
     border: 0.01rem solid var(--verde);
@@ -129,6 +138,11 @@ main section article i{
     bottom: 0.2rem;
 }
 
+.article-truck i:hover{
+    transform: rotateZ(-90deg);
+    transition-property: transform;
+    transition-duration: 2s;
+}
 .first-box{
     display: flex;
     flex-direction: row;
