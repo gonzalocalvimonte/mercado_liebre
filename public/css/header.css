@@ -79,12 +79,12 @@ header{
     justify-content: center;
     flex-direction: row;   
 }
+.ul-2 li{
+    width: auto;
+    display: inline;
+}
 .ul-1 li{width: auto;
-    display: flex;
-    flex-direction:row;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    list-style: none;
+    display: inline
 }
 .ul-1 a{
     margin: 0.5rem;
