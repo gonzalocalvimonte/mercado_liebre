@@ -85,15 +85,15 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
         <input type="text" name="domicilio" placeholder="Domicilio">
         <input type="number" name="telefono" placeholder="Telefono">
         <input type="email" name="Email" placeholder="Email">
-        
+
         <fieldset class="fieldset-1">
             <span class="span">Perfil de usuario</span>
  
         <section>
-        <label for="v-comprador">Comprador</label>
-        <input type="radio" name="view" id="v-comprador" value="comprador">
-        <label for="v-vendedor">Vendedor</label>
-        <input type="radio" name="view" id="v-vendedor" value="vendedor">       
+        <label for="comprador">Comprador</label>
+        <input type="radio" name="comprador" id="comprador" value="comprador">
+        <label for="vendedor">Vendedor</label>
+        <input type="radio" name="vendedor" id="vendedor" value="vendedor">       
         </section>
         </fieldset>
 
@@ -101,37 +101,37 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
             <span class="span">Categorias de interes</span>
         <section>
         <label for="electro">Electronica</label>    
-        <input type="checkbox" name="electronica" id="electro">
-        <label for="">Moda</label>
-        <input type="checkbox" name="" id="" value="">
-        <label for="">Hogar</label>
-        <input type="checkbox" name="" id="" value="">
-        <label for="">Jugueteria</label>
-        <input type="checkbox" name="" id="" value="">
-        <label for="">Vida sana</label>
-        <input type="checkbox" name="" id="" value="">
-        <label for="">Autos</label>    
-        <input type="checkbox" name="" id="" value="">
-        <label for="">Mascotas</label>
-        <input type="checkbox" name="" id="" value="">
-        <label for="">Agro</label>
-        <input type="checkbox" name="" id="" value="">
-        <label for="">Colecciones</label>
-        <input type="checkbox" name="" id="" value="">
-        <label for="">Jardin</label>
-        <input type="checkbox" name="" id="" value="">
+        <input type="checkbox" name="electro" id="electro">
+        <label for="moda">Moda</label>
+        <input type="checkbox" name="moda" id="moda">
+        <label for="hogar">Hogar</label>
+        <input type="checkbox" name="hogar" id="hogar" >
+        <label for="jugueteria">Jugueteria</label>
+        <input type="checkbox" name="jugueteria" id="jugueteria" >
+        <label for="vidaSana">Vida sana</label>
+        <input type="checkbox" name="vidaSana" id="vidaSana" >
+        <label for="autos">Autos</label>
+        <input type="checkbox" name="autos" id="autos" >
+        <label for="mascotas">Mascotas</label>
+        <input type="checkbox" name="mascotas" id="mascotas" >
+        <label for="agro">Agro</label>
+        <input type="checkbox" name="agro" id="agro" >
+        <label for="colecciones">Colecciones</label>
+        <input type="checkbox" name="colecciones" id="colecciones" >
+        <label for="jardin">Jardin</label>
+        <input type="checkbox" name="jardin" id="jardin" >
         </section>
         </fieldset>
 
         <section class="section-perfil">
-        <label class="label-perfil" for="">Selecionar foto de perfil</label>
-        <input class="input-perfil" type="file" name="" id="">
+        <label class="label-perfil" for="fotoPerfil">Selecionar foto de perfil</label>
+        <input class="input-perfil" type="file" name="fotoPerfil" id="fotoPerfil">
         </section>
 
         <input type="password" name="contrasenia" placeholder="Contraseña">
         <input type="password" name="rep-contra" placeholder="Repetir contraseña">
-        <button class="boton-enviar">Enviar</button>
-        <button class="boton-reset">Borrar Formulario</button>
+        <button type="submit" class="boton-enviar">Enviar</button>
+        <button type="reset" class="boton-reset">Borrar Formulario</button>
     </section>  
     </form>
     </main>
