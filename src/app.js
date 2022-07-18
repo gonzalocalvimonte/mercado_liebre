@@ -1,8 +1,8 @@
 const express = require('express');
 const server = express();
-const port = 2020;
 const start = () => console.log('Starting server');
-server.listen(port,start());
+
+server.listen( process.env.PORT || 3001,start());
 
 const path = require('path');
 const public = path.join(__dirname, '../public')
