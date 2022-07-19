@@ -78,9 +78,9 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     <main class="main-register">
 
         <section class="section-register">
-      <form class="form-register" action="">
+      <form class="form-register" action="/" method="post">
         <input type="text" name="nombre" placeholder="Nombre y apellido">
-        <input type="text" name="nick" placeholder="Nombre de usuario">
+        <input type="text" name="nick" placeholder="Nombre de usuario" minlength="2" required>
         <input type="date" name="nacimiento">
         <input type="text" name="domicilio" placeholder="Domicilio">
         <input type="number" name="telefono" placeholder="Telefono">
@@ -91,9 +91,9 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
  
         <section>
         <label for="comprador">Comprador</label>
-        <input type="radio" name="comprador" id="comprador" value="comprador">
+        <input type="radio" name="view" id="comprador">
         <label for="vendedor">Vendedor</label>
-        <input type="radio" name="vendedor" id="vendedor" value="vendedor">       
+        <input type="radio" name="view" id="vendedor">       
         </section>
         </fieldset>
 
@@ -128,8 +128,8 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
         <input class="input-perfil" type="file" name="fotoPerfil" id="fotoPerfil">
         </section>
 
-        <input type="password" name="contrasenia" placeholder="Contraseña">
-        <input type="password" name="rep-contra" placeholder="Repetir contraseña">
+        <input type="password" name="contrasenia" placeholder="Contraseña" minlength="6" required>
+        <input type="password" name="rep-contra" placeholder="Repetir contraseña" minlength="6" required>
         <button type="submit" class="boton-enviar">Enviar</button>
         <button type="reset" class="boton-reset">Borrar Formulario</button>
     </section>  
