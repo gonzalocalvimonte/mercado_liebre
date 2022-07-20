@@ -55,8 +55,8 @@ main{
     text-align: start;
     font-size: 2.4rem;
     color: var(--grisOscuro);
-    margin-top: 0rem;
-    margin-bottom: 2.0rem;
+    margin-top: 1rem;
+    margin-bottom: 1.0rem;
     padding: 1.0rem;
 
 }
@@ -69,7 +69,7 @@ main{
     text-align: start;
     font-size: 2.4rem;
     color: var(--grisOscuro);
-    margin-bottom: 2.0rem;
+    margin-bottom: 1.0rem;
     padding: 1.0rem;
 }
 .second-title h2{

@@ -79,19 +79,19 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <section class="section-register">
       <form class="form-register" action="/" method="post">
-        <input type="text" name="nombre" placeholder="Nombre y apellido">
+        <input type="text" name="nombre" placeholder="Nombre y apellido" required>  
         <input type="text" name="nick" placeholder="Nombre de usuario" minlength="2" required>
-        <input type="date" name="nacimiento">
-        <input type="text" name="domicilio" placeholder="Domicilio">
-        <input type="number" name="telefono" placeholder="Telefono">
-        <input type="email" name="Email" placeholder="Email">
+        <input type="date" name="nacimiento" required>
+        <input type="text" name="domicilio" placeholder="Domicilio" required>
+        <input type="number" name="telefono" placeholder="Teléfono" required>
+        <input type="email" name="Email" placeholder="Email" required >
 
         <fieldset class="fieldset-1">
             <span class="span">Perfil de usuario</span>
  
         <section>
         <label for="comprador">Comprador</label>
-        <input type="radio" name="view" id="comprador">
+        <input type="radio" name="view" id="comprador" checked>
         <label for="vendedor">Vendedor</label>
         <input type="radio" name="view" id="vendedor">       
         </section>
@@ -106,7 +106,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
         <input type="checkbox" name="moda" id="moda">
         <label for="hogar">Hogar</label>
         <input type="checkbox" name="hogar" id="hogar" >
-        <label for="jugueteria">Jugueteria</label>
+        <label for="jugueteria">Juguetería</label>
         <input type="checkbox" name="jugueteria" id="jugueteria" >
         <label for="vidaSana">Vida sana</label>
         <input type="checkbox" name="vidaSana" id="vidaSana" >
@@ -118,7 +118,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
         <input type="checkbox" name="agro" id="agro" >
         <label for="colecciones">Colecciones</label>
         <input type="checkbox" name="colecciones" id="colecciones" >
-        <label for="jardin">Jardin</label>
+        <label for="jardin">Jardín</label>
         <input type="checkbox" name="jardin" id="jardin" >
         </section>
         </fieldset>
@@ -128,8 +128,8 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
         <input class="input-perfil" type="file" name="fotoPerfil" id="fotoPerfil">
         </section>
 
-        <input type="password" name="contrasenia" placeholder="Contraseña" minlength="6" required>
-        <input type="password" name="rep-contra" placeholder="Repetir contraseña" minlength="6" required>
+        <input type="password" name="contrasenia" placeholder="Contraseña" min="8" max="15" required>
+        <input type="password" name="rep-contra" placeholder="Repetir contraseña" min="8" max="15" required>
         <button type="submit" class="boton-enviar">Enviar</button>
         <button type="reset" class="boton-reset">Borrar Formulario</button>
     </section>  

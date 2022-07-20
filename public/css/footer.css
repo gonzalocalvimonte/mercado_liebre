@@ -31,7 +31,7 @@ html{
 
 .div-logo i{
     color: var(--celeste);
-        font-size: 2.5rem;
+        font-size: 2em;
         margin-bottom: 1.5rem;
         width: auto;
 }
